@@ -1,3 +1,4 @@
+import { Button } from '@suid/material';
 import { createSignal } from 'solid-js';
 
 export default function Home() {
@@ -15,7 +16,6 @@ export default function Home() {
         >
           -
         </button>
-
         <output class="p-10px">Count: {count()}</output>
 
         <button
@@ -24,6 +24,7 @@ export default function Home() {
         >
           +
         </button>
+        <Button variant="contained">Button</Button>
       </div>
     </section>
   );
