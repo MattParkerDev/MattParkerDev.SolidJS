@@ -3,6 +3,7 @@ import { Link, useRoutes, useLocation } from '@solidjs/router';
 
 import { routes } from './routes';
 import NavBar from './components/NavBar';
+import SiteWrapper from './components/SiteWrapper';
 
 const App: Component = () => {
   const location = useLocation();
@@ -10,10 +11,13 @@ const App: Component = () => {
 
   return (
     <>
+    <SiteWrapper>
+
       <NavBar />
       <main>
         <Route />
       </main>
+    </SiteWrapper>
     </>
   );
 };
