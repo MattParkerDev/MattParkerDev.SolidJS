@@ -5,20 +5,21 @@
 
 @keyframes float {
     0% {
-        transform: translateY(0px);
+        transform: translateY(-10px);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(-10px);
     }
 }
 
 .clouds {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/95/Cartoon_cloud.svg');
     background-repeat: repeat;
-    animation: clouds-scroll 40s linear infinite;
+    animation: clouds-scroll 4s linear infinite;
+    animation-fill-mode: forwards;
     background-color: lightblue; /* added line */
 }
 

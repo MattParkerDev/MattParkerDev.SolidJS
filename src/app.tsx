@@ -14,7 +14,7 @@ const App: Component = () => {
     <SiteWrapper>
 
       <NavBar />
-      <main>
+      <main class="h-full box-content">
         <Route />
       </main>
     </SiteWrapper>
